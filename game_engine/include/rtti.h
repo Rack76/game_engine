@@ -1,9 +1,9 @@
 #ifndef RTTI
 #define RTTI
 
-namespace Engine
+namespace engine
 {
-	class RTTI
+	class rtti
 	{
 	public:
 		template <typename T>
@@ -14,7 +14,7 @@ namespace Engine
 		}
 
 	private:
-		int typeCount = 0;
+		int type_count = 0;
 	};
 }
 
