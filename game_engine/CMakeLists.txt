@@ -1,4 +1,4 @@
-file(GLOB_RECURSE SRC "src/*.cpp")
+file(GLOB_RECURSE SRC "src/*.cpp" "include/*.h")
 
 add_library(game_engine ${SRC})
 

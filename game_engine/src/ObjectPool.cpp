@@ -1,9 +1,10 @@
 #include "ObjectPool.h"
+#include <cstdlib>
 
 namespace Engine
 {
-	void ObjectPool::alloc()
+	ObjectPool::ObjectPool(int bytes, int count, int alignement)
 	{
-
+		data = _aligned_malloc(bytes * count, alignement);
 	}
 }

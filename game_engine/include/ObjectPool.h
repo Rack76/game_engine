@@ -6,7 +6,9 @@ namespace Engine
 	class ObjectPool
 	{
 	public:
-		void alloc();
+		ObjectPool(int bytes, int count, int alignement);
+
+		void* data;
 	};
 }
 
